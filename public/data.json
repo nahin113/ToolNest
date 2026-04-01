@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Advanced AI-powered writing assistant for blogs, emails, and marketing content.",
+    "price": 15.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "AI blog & article generation",
+      "Grammar & tone optimization",
+      "SEO keyword suggestions",
+      "Export to DOCX & PDF"
+    ],
+    "icon": "https://i.ibb.co.com/hJHGLvVy/writing-2327400-1.png"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "A collection of modern, ready-to-use design templates for web and social media.",
+    "price": 24.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "200+ UI templates",
+      "Figma & Canva support",
+      "Fully customizable layouts",
+      "Commercial use license"
+    ],
+    "icon": "https://i.ibb.co.com/F43YTvxD/design-tool.png"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "description": "High-quality stock images, videos, and icons for professional projects.",
+    "price": 12.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "10,000+ stock images",
+      "4K video assets",
+      "SVG icons & illustrations",
+      "Royalty-free usage"
+    ],
+    "icon": "https://i.ibb.co.com/1tPJQWw7/camera-8775444-1.png"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "description": "Boost productivity by automating repetitive workflows and tasks.",
+    "price": 29.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Workflow automation builder",
+      "API integrations",
+      "Task scheduling",
+      "No-code interface"
+    ],
+    "icon": "https://i.ibb.co.com/Y4NKsP1P/operation.png"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "description": "Create ATS-friendly resumes with AI guidance and professional templates.",
+    "price": 9.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "100+ resume templates",
+      "ATS optimization",
+      "AI content suggestions",
+      "Export to PDF"
+    ],
+    "icon": "https://i.ibb.co.com/hFjxwmRK/portfolio.png"
+  },
+  {
+    "id": 6,
+    "name": "Social Media Content Kit",
+    "description": "Ready-made content and templates to grow your social media presence.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Content calendar",
+      "Post & caption templates",
+      "Hashtag generator",
+      "Multi-platform support"
+    ],
+    "icon": "https://i.ibb.co.com/nsP2GkPQ/social-media.png"
+  }
+]
