@@ -1,8 +1,19 @@
 import { Check } from 'lucide-react';
-import React from 'react';
+import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
-const ProductList = ({product}) => {
-    console.log(product)
+const ProductList = ({product,cart,setCart,cartTotal, setCartTotal}) => {
+    
+    const [buy,setBuy] = useState(false)
+
+    const handleCart = () => {
+        setBuy(true)
+        toast.success(`${product.name} added to Cart`);
+        setCart([...cart,product])
+        const total = cartTotal + Number(product.price);
+        setCartTotal(total)
+      };
+
     return (
       <div>
         <div className="w-full max-w-sm rounded-3xl border border-gray-100 bg-white p-8 shadow-sm transition-all hover:shadow-md space-y-4">
@@ -43,8 +54,24 @@ const ProductList = ({product}) => {
               </li>
             ))}
           </ul>
-          <button className="w-full rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-4 text-center font-bold text-white transition-opacity hover:opacity-90">
-            Buy Now
+          <button
+          disabled={buy}
+            onClick={handleCart}
+            className={`flex items-center justify-center gap-2 w-full rounded-full py-4 text-center font-bold text-white transition-all duration-300
+    ${
+      buy
+        ? "bg-emerald-500 shadow-emerald-100"
+        : "bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:opacity-90 shadow-md"
+    }`}
+          >
+            {buy ? (
+              <>
+                <Check></Check>
+                <span>Added to Cart!</span>
+              </>
+            ) : (
+              "Buy Now"
+            )}
           </button>
         </div>
       </div>
