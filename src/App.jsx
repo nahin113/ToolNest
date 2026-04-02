@@ -7,6 +7,7 @@ import Stats from "./sections/Stats";
 import Steps from "./sections/Steps";
 import Pricing from "./sections/Pricing";
 import StatsEnd from "./sections/StatsEnd";
+import Footer from "./components/common/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Steps></Steps>
       <Pricing></Pricing>
       <StatsEnd></StatsEnd>
+      <Footer></Footer>
     </>
   );
 }
