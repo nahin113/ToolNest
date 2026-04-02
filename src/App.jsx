@@ -6,6 +6,7 @@ import Banner from "./sections/Banner";
 import Stats from "./sections/Stats";
 import Steps from "./sections/Steps";
 import Pricing from "./sections/Pricing";
+import StatsEnd from "./sections/StatsEnd";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <ToastContainer></ToastContainer>
       <Steps></Steps>
       <Pricing></Pricing>
+      <StatsEnd></StatsEnd>
     </>
   );
 }
