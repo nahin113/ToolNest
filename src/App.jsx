@@ -8,14 +8,17 @@ import Steps from "./sections/Steps";
 import Pricing from "./sections/Pricing";
 import StatsEnd from "./sections/StatsEnd";
 import Footer from "./components/common/Footer";
+import { useState } from "react";
 
 function App() {
+
+  const [cart, setCart] = useState([]); 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar cart={cart}></Navbar>
       <Banner></Banner>
       <Stats></Stats>
-      <Product></Product>
+      <Product cart={cart} setCart={setCart}></Product>
       <ToastContainer></ToastContainer>
       <Steps></Steps>
       <Pricing></Pricing>

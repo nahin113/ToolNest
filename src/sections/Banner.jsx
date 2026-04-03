@@ -5,7 +5,7 @@ import { Play } from 'lucide-react';
 
 const Banner = () => {
     return (
-      <div className="w-8/12 mx-auto flex justify-between items-center">
+      <div className="w-8/12 mx-auto flex justify-between items-center py-[85px]">
         <div className="banner-text space-y-4">
           <div className="px-4 py-2 bg-[#E1E7FF] gap-[5px] flex justify-center items-center rounded-[1000px] w-1/2">
             <img src={circleIcon} alt="circle icon" />

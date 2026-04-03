@@ -4,8 +4,9 @@ import ProductList from './ProductList';
 const ProductCard = ({productData,cart,setCart,cartTotal,setCartTotal}) => {
     const productList = use(productData)
 
+
     return (
-        <div className='grid grid-cols-3 gap-[30px]'>
+        <div className='grid grid-cols-3 gap-[30px] pt-[40px]'>
             {productList.map(product=> <ProductList key={product.id} product={product} cart={cart} setCart = {setCart} cartTotal = {cartTotal} setCartTotal = {setCartTotal}></ProductList>)}
         </div>
     );
