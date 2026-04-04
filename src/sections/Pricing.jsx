@@ -3,7 +3,7 @@ import React from 'react';
 
 const Pricing = () => {
     return (
-      <div className="w-10/12 mx-auto text-center space-y-[40px] py-[120px]">
+      <div className="lg:w-10/12 mx-auto text-center space-y-[40px] py-[60px] lg:py-[120px]">
         <div className="space-y-4">
           <h1 className="text-[#101727] text-[48px] font-extrabold">
             Simple, Transparent Pricing
@@ -12,8 +12,9 @@ const Pricing = () => {
             Choose the plan that fits your needs. Upgrade or downgrade anytime.
           </p>
         </div>
-        <div className="w-10/12 mx-auto grid grid-cols-3 gap-[30px]">
-          <div className="starter text-left space-y-[24px] p-[24px] shadow-md bg-base-200 rounded-[16px]">
+        <div className="lg:w-10/12 mx-auto grid lg:grid-cols-3 gap-[30px]">
+          <div className="starter transition-all duration-300 ease-in-out 
+                hover:scale-[1.02] hover:shadow-xl text-left space-y-[24px] p-[24px] shadow-md bg-base-200 rounded-[16px]">
             <div>
               <h1 className="text-[24px] font-bold text-[#101727]">Starter</h1>
               <p className="text-[16px] text-[#627382]">
@@ -39,13 +40,17 @@ const Pricing = () => {
                 <Check className="text-[#30b868]"></Check>1 project per month
               </li>
             </ul>
-            <button className="btn py-4 font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white p-4 rounded-[10000px] w-full">
+            <button className="btn hover:shadow-xl py-4 font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white p-4 rounded-[10000px] w-full">
               Get Started Free
             </button>
           </div>
 
-          <div className="pro relative shadow-md text-left space-y-[24px] p-[24px] bg-base-300 rounded-[16px] bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white">
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-[#fef3c6] px-5 py-1.5 text-xs font-bold text-[#bb4d00]  border border-[#fef3c6]">
+          <div className="pro transition-all duration-300 ease-in-out 
+                hover:scale-[1.02] hover:shadow-xl relative shadow-md text-left space-y-[24px] p-[24px] bg-base-300 rounded-[16px] bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white">
+            <div
+              className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-[#fef3c6] px-5 py-1.5 text-xs font-bold text-[#bb4d00] border border-[#fef3c6]
+                shadow-md shadow-amber-300/50"
+            >
               Most Popular
             </div>
             <div>
@@ -76,14 +81,15 @@ const Pricing = () => {
                 <Check></Check>Advanced analytics
               </li>
             </ul>
-            <button className="btn py-4 font-bold bg-white p-4 rounded-[10000px] w-full shadow-none">
+            <button className="btn hover:shadow-xl py-4 font-bold bg-white p-4 rounded-[10000px] w-full shadow-none">
               <p className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent font-bold">
                 Start Pro Trial
               </p>
             </button>
           </div>
 
-          <div className="enterprise text-left space-y-[24px] p-[24px] bg-base-200 shadow-md rounded-[16px]">
+          <div className="enterprise transition-all duration-300 ease-in-out 
+                hover:scale-[1.02] hover:shadow-xl text-left space-y-[24px] p-[24px] bg-base-200 shadow-md rounded-[16px]">
             <div>
               <h1 className="text-[24px] font-bold text-[#101727]">
                 Enterprise
@@ -116,7 +122,7 @@ const Pricing = () => {
                 <Check className="text-[#30b868]"></Check>Custom branding
               </li>
             </ul>
-            <button className="btn py-4 font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white p-4 rounded-[10000px] w-full">
+            <button className="btn hover:shadow-xl py-4 font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white p-4 rounded-[10000px] w-full">
               Contact Sales
             </button>
           </div>

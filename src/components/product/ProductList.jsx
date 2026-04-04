@@ -10,7 +10,7 @@ const ProductList = ({product,cart,setCart,cartTotal, setCartTotal}) => {
         if (inCart) return;
         toast.success(`${product.name} added to Cart`);
         setCart([...cart,product])
-        const total = cartTotal + Number(product.price);
+        const total = Number(cartTotal) + Number(product.price);
         setCartTotal(total)
       };
 
@@ -22,13 +22,18 @@ const ProductList = ({product,cart,setCart,cartTotal, setCartTotal}) => {
 
     return (
       <div>
-        <div className="w-full rounded-[16px] border border-gray-100 bg-white p-6 shadow-md space-y-4">
+        <div
+          className="w-full rounded-[16px] border border-gray-100 bg-white p-6 shadow-md space-y-4 transition-all duration-300 ease-in-out 
+                hover:scale-[1.02] hover:shadow-xl"
+        >
           <div className="flex items-start justify-between">
             <div className="flex h-16 w-16 items-center justify-center rounded-full border border-gray-50 bg-[#F9FAFB] p-3 text-3xl">
               <img src={product.icon} alt={product.name} />
             </div>
             {product.tag && (
-              <span className={`rounded-full px-4 py-1 text-sm font-medium ${productState()}`}>
+              <span
+                className={`rounded-full px-4 py-1 text-sm font-medium ${productState()}`}
+              >
                 {product.tag}
               </span>
             )}
@@ -61,9 +66,11 @@ const ProductList = ({product,cart,setCart,cartTotal, setCartTotal}) => {
             ))}
           </ul>
           <button
-          disabled={inCart}
+            disabled={inCart}
             onClick={handleCart}
             className={`flex items-center justify-center gap-2 w-full rounded-full py-4 text-center font-bold text-white transition-all duration-300
+                   hover:shadow-2xl 
+                   active:scale-95
     ${
       inCart
         ? "bg-emerald-500 shadow-emerald-100"

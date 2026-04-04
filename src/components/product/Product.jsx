@@ -20,7 +20,7 @@ const Product = ({cart,setCart}) => {
     const productData = fetchProduct()
 
     return (
-      <div className="w-8/12 mx-auto text-center space-y-4 py-[120px]">
+      <div className="w-full lg:w-8/12 mx-auto text-center space-y-4 py-[120px]">
         <h1 className="text-[48px] font-extrabold text-[#101727]">
           Premium Digital Tools
         </h1>

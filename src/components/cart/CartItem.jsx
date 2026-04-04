@@ -24,7 +24,9 @@ const CartItem = ({cart,setCart,cartTotal,setCartTotal}) => {
                     cartProduct={cartProduct}
                     setCart={setCart}
                     cart={cart}
-                  />
+                    cartTotal={cartTotal}
+                    setCartTotal={setCartTotal}
+                  ></CartList>
                 ))}
               </div>
 

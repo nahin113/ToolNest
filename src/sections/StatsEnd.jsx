@@ -14,12 +14,12 @@ const StatsEnd = () => {
       </div>
       <div className="space-y-4">
         <div className="flex justify-center items-center gap-[16px]">
-          <button className="btn bg-white rounded-[100px] shadow-none">
+          <button className="btn transition-all duration-400 hover:scale-105 active:scale-95 bg-white rounded-[100px] shadow-none">
             <span className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
               Explore Products
             </span>
           </button>
-          <button className=" btn bg-transparent rounded-[100px] text-white shadow-none">
+          <button className=" btn transition-all duration-400 hover:scale-105 active:scale-95 bg-transparent rounded-[100px] text-white shadow-none">
             View Pricing
           </button>
         </div>

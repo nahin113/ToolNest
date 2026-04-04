@@ -6,7 +6,7 @@ const ProductCard = ({productData,cart,setCart,cartTotal,setCartTotal}) => {
 
 
     return (
-        <div className='grid grid-cols-3 gap-[30px] pt-[40px]'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] pt-[40px]'>
             {productList.map(product=> <ProductList key={product.id} product={product} cart={cart} setCart = {setCart} cartTotal = {cartTotal} setCartTotal = {setCartTotal}></ProductList>)}
         </div>
     );
